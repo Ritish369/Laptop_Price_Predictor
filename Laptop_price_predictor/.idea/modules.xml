@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Laptop_price_predictor.iml" filepath="$PROJECT_DIR$/.idea/Laptop_price_predictor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Laptop_Price_Predictor.iml" filepath="$PROJECT_DIR$/.idea/Laptop_Price_Predictor.iml" />
     </modules>
   </component>
 </project>

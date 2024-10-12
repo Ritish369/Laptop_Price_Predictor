@@ -35,7 +35,8 @@ ips = st.selectbox("IPS Display", ["Yes", "No"])
 screen_size = st.number_input("Screen Size")
 
 # User input - Resolution of the screen
-resolution = st.selectbox("Screen Resolution", ['1920x1080','1366x768','1600x900','3840x2160','3200x1800','2880x1800','2560x1600','2560x1440','2304x1440'])
+resolution = st.selectbox("Screen Resolution", ['1920x1080', '1366x768', '1600x900', '3840x2160', '3200x1800',
+                                                '2880x1800', '2560x1600', '2560x1440', '2304x1440'])
 
 # User input - CPU brand
 CPU = st.selectbox("CPU", data["Cpu brand"].unique())
@@ -72,6 +73,6 @@ if st.button("Predict Price"):
     # the original i/p vector
     query = query.reshape(1, 12)
 
-    # Making predictions(Exponential because did log transformation on the target
+    # Making predictions(Exponential because did log transformation on the target)
     # column. Thus, need to do inverse_transform
     st.title("The predicted price of this configuration is " + str(int(np.exp(model.predict(query))[0])) + " Euros.")
